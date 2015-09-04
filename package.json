@@ -1,0 +1,13 @@
+{
+  "name": "nw-notebook",
+  "version": "0.1.11",
+  "main": "index.html",
+  "window": {
+    "width": 1024,
+    "height": 768,
+    "min_width": 896,
+    "min_height": 640,
+    "title": "个人知识管理工具",
+    "toolbar": false
+  }
+}

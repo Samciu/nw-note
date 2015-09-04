@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>个人知识管理工具</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div class="parent">
+	<div class="left">
+		<div class="l-header">
+			<h1>笔记本</h1>		
+			<span class="tianjia"></span>
+		</div>
+		<div class="list_pra">
+			<ul id="left"></ul>
+		</div>
+		<!-- <div class="del" id="del"></div> -->
+	</div>
+	<div class="center" id="center" style="display:none;">
+		<div class="note clearfix">
+			<h1>笔记</h1>
+			<div><button id="addnote">新建笔记</button></div>			
+		</div>
+		<!-- N个笔记内容 -->
+		<ul class="list" id="list"></ul>
+		
+	</div>
+	<div class="right" id="right" style="display:none;">
+		<div class="title">
+			<h1 id="r-title"></h1>
+			<span id="close">X</span>
+			<span id="done" class="done" style="display:none">保存</span>
+		</div>
+		<div class="pra" id="text"></div>
+	</div>
+</div>
+<script src="js/marked.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

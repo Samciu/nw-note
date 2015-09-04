@@ -1,0 +1,210 @@
+html,body,.parent{
+	height: 100%;
+}
+.parent{
+	font-family: "Microsoft YaHei";
+	background-color: #eee;
+	cursor: default;
+	min-width: 768px;
+	overflow: hidden;	
+}
+.left,.center{
+	float: left;
+	margin-right: 10px;	
+}
+.right{
+	overflow: hidden;
+}
+.left,.center,.right{
+	position: relative;
+	height: 100%;
+}
+.left{
+	width: 170px;		
+	background-color: #191818;
+	color: #656463;
+	text-align: center;
+	font-size: 15px;
+}
+.center,.right{		
+	background-color: #fff;
+}
+.center{
+	width: 355px;
+}
+.left h1{
+	font-size: 34px;
+	margin-top: 70px;
+}
+.left .list_pra{
+	position: absolute;
+	top: 210px;
+	left: 0;
+	right: 0;	
+	bottom: 120px;
+	overflow: auto;	
+}
+.left ul{
+	text-align: left;
+	color: #8C8B8B;
+}
+.left li{
+	height: 38px;
+	line-height: 38px;
+	padding-left: 20px;
+	outline: 0;	
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	transition: all 0.3s;
+}
+.left .current{
+	color: #fff;
+	background-color: #313030;
+}
+.left li:hover{
+	background-color: #313030;
+}
+/*.left span{
+	display: inline-block;
+	margin-top: 40px;
+	width: 28px;
+	height: 28px;
+	padding: auto 0;
+	color: #BAB9B9;
+	font-size: 22px;
+	border: 2px solid #BAB9B9;
+	border-radius: 50%;
+}*/
+.left .tianjia{
+	display: inline-block;
+	margin-top: 40px;
+	width: 28px;
+	height: 28px;
+	background: url('../icon/iconfont-tianjialeimu.png') no-repeat center;
+}
+.note{
+	margin-top: 70px;
+	padding: 0 18px;
+	height: 40px;
+	line-height: 40px;
+}
+.center h1{
+	font-size: 34px;
+	color: #C6C6C6;
+	float: left;
+}
+.note div{
+	float: right;	
+}
+.center button{
+	font-size: 13px;
+	line-height: 33px;
+	width: 125px;
+	background-color: #DA3610;
+	color: #fff;
+	border: 0;
+	border-radius: 4px;
+}
+.center h2{
+	font-size: 14px;
+}
+.center .list{
+	position: absolute;
+	top: 190px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: 13px;
+	line-height: 20px;
+	padding: 3px 10px;
+	overflow: auto;
+}
+.center .list li{
+	height: 100px;
+	background-color: #F6F6F6;
+	margin-bottom: 10px;
+	padding: 2px 5px;
+	border-radius: 4px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	border: 1px solid #fff;
+	transition: all 0.3s;
+}
+.center .list .current{
+	border: 1px solid #67B8E4;
+	background-color: #fff;
+}
+.center .list li:hover{
+	/*border: 1px solid #67B8E4;*/
+	/*background-color: #fff;*/
+	box-shadow: 2px 2px 10px #888888;
+}
+.right .title{
+	position: relative;
+	height: 120px;
+	background-color: #DA3610;
+	padding: 70px 40px 0;
+	font-size: 35px;
+	color: #fff;
+}
+.right span{
+	position: absolute;
+	top: 70px;
+	right: 40px;
+}
+.right .done{
+	border: 1px solid #fff;
+	font-size: 25px;
+	padding: 5px 15px;
+	border-radius: 4px;
+	transition: all 0.25s;
+}
+.right .done:hover{
+	color: #DA3610;
+	background-color: #fff; 
+}
+.right h1{
+	margin-right: 90px;
+	outline: 0;
+}
+.right .pra{
+	position: absolute;
+	top: 190px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 30px;
+	overflow: auto;	
+	font-size: 15px;
+	line-height: 25px;
+	outline: 0;
+	word-break:break-all;
+}
+/* 滚动条 */
+::-webkit-scrollbar{width:8px;height:9px;}
+::-webkit-scrollbar-thumb{border-radius:4px;}
+::-webkit-scrollbar-button,::-webkit-scrollbar-corner{display:none;}
+::-webkit-scrollbar-track{background:rgba(0,0,0,0);}/* 滚动条的槽 */
+::-webkit-scrollbar-thumb{background:rgba(188,188,188,0.6);}/* 滚动条的条 */
+::-webkit-scrollbar-thumb:hover{background:rgba(188,188,188,0.8);}/* hover高亮 */
+/*鼠标手指形状*/
+.left li,.list li,.right span,.del,.left .tianjia{
+	cursor: pointer;
+}
+.del{
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+	background-color: #2B2A2A;
+	border-radius: 5px;
+}
+.menu{position:fixed;width:150px;background:#F7F8F9;color:#010101;text-align:center;text-shadow:none;}
+.menu .itm{height:30px;line-height:30px;padding:5px 30px;border: 1px solid #d2d2d2;border-top: 0;}
+.menu .itm:hover{background:#E9EAEC;border-right: 10px solid #DA3610;transition: all 0.5s;}
+/*移动端隐藏*/
+.pre{
+	display: none;
+}
