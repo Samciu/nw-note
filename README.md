@@ -1,9 +1,6 @@
-# nw-note
-note-webkit实践
-
 # 使用说明：
 
-桌面版下载后，运行`nw-note.exe`即可  
+下载本项目后，运行`nw-note.exe`即可  
 
 [在线预览Demo](http://samciu.github.io/note/)  
 
@@ -13,4 +10,4 @@ note-webkit实践
 `NW.js`将二者的context完全整合，能在 `DOM` 上调用所有 `Node.js` 模块。
 
 # TODO
-使用Node.js的[File System](https://nodejs.org/api/fs.html)，实现文件读取和保存
+调用Node.js的[File System 接口](https://nodejs.org/api/fs.html)，**实现文件读取和保存**
